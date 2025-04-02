@@ -12,7 +12,7 @@ pipeline {
     
         stage('Build') {
             steps {
-                bat '"D:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\MSBuild\\Current\\Bin\\MSBuild.exe" test_repos.sln /p:Platform=x64 /p:Configuration=Release'
+                bat '"D:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\MSBuild\\Current\\Bin\\MSBuild.exe" test_repos.sln /p:Platform=x64 /p:Configuration=Release /p:WindowsTargetPlatformVersion=10.0.22621.0'
             }    
         }
 
