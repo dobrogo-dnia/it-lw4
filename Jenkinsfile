@@ -4,7 +4,8 @@ pipeline {
 	stages {
 		stage('Checkout') {
 			steps {
-				git url: 'https://github.com/dobrogo-dnia/it-lw4.git', credentialsId: '442aed03-600c-4e52-9bf6-145cf109363d'
+				git url: 'https://github.com/dobrogo-dnia/it-lw4.git', credentialsId: '442aed03-600c-4e52-9bf6-145cf109363d', branch: 'main'
+
 			} 
 		}
 	
